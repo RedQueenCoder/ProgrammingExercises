@@ -8,17 +8,26 @@
 
 import Foundation
 
+extension String {
+    func trim () -> String {
+        return self.stringByTrimmingCharactersInSet(.whitespaceAndNewlineCharacterSet())
+    }
+}
+
 func nameFunction(name:String) -> String {
     
-    let myInt: Int? = Int(name)
+    let trimmedName = name.trim()
     
-    if name.characters.count == 0 {
+    guard !trimmedName.isEmpty else {
         return "You need to enter your name"
-    } else if myInt != nil {
-        return "You entered numbers, not a name"
-    } else {
-        return "Hello \(name), how are you?"
     }
+    
+    guard Int(trimmedName) == nil else {
+        return "You entered numbers, not a name"
+    }
+    
+    
+    return "Hello \(trimmedName), how are you?"
     
 }
 
