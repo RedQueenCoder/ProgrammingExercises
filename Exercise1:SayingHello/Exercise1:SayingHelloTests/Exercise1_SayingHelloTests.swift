@@ -48,18 +48,31 @@ class Exercise1_SayingHelloTests: XCTestCase {
         let whiteString  = "    \n"
         let trimIt       = " Delia "
 
+        func XCTNameFunctionTrhow(name: String, error: InputFieldError) {
+            do {
+                let firstTest = try nameFunction(emptyString)
+                XCTAssertNil(firstTest, "Name Field Should Throw")
+            } catch let error as InputFieldError {
+                XCTAssertEqual(error, error, "Wrong Error")
+            } catch _ {
+                XCTFail("Wrong Error Type")
+            }
+        }
         
-        let firstTest = nameFunction(emptyString)
-        let secondTest = nameFunction(numberString)
-        let thirdTest = nameFunction(normalString)
-        let fourthTest = nameFunction(whiteString)
-        let fifthTest = nameFunction(trimIt)
+        // Throw tests
+        XCTNameFunctionTrhow(emptyString, error: .GenericName)
+        XCTNameFunctionTrhow(numberString, error: .Number)
+        XCTNameFunctionTrhow(whiteString, error: .GenericName)
         
-        XCTAssertEqual(firstTest, "You need to enter your name")
-        XCTAssertEqual(secondTest, "You entered numbers, not a name")
-        XCTAssertEqual(thirdTest, "Hello \(normalString), how are you?")
-        XCTAssertEqual(fourthTest, "You need to enter your name")
-        XCTAssertEqual(fifthTest, "Hello Delia, how are you?")
+        // Non Throw tests
+        
+        let firstTest = try? nameFunction(normalString)
+        XCTAssertNotNil(firstTest)
+        XCTAssertEqual(firstTest, "Hello \(normalString), how are you?")
+        
+        let secondTest = try? nameFunction(trimIt)
+        XCTAssertNotNil(secondTest)
+        XCTAssertEqual(secondTest, "Hello Delia, how are you?")
     }
     
     func testPerformanceExample() {

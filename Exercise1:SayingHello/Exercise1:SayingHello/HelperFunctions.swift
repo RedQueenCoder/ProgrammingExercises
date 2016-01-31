@@ -19,19 +19,28 @@ extension String {
     }
 }
 
+/// Error Type for Input Field Validations
+enum InputFieldError: String, ErrorType {
+    /// Generic Error for the name field
+    case GenericName = "You need to enter your name"
+    /// Found a Number when should be a Name
+    case Number = "You entered numbers, not a name"
+}
+
 /// Validates and trim an input string that should be a name.
 /// - Parameter name: The input name string.
-/// - Returns: The trimmed input name or a string describing the error to the user.
-func nameFunction(name:String) -> String {
+/// - Returns: The trimmed input name.
+/// - Throws: `InputFieldError`
+func nameFunction(name:String) throws -> String {
     
     let trimmedName = name.trim()
     
     guard !trimmedName.isEmpty else {
-        return "You need to enter your name"
+        throw InputFieldError.GenericName
     }
     
     guard Int(trimmedName) == nil else {
-        return "You entered numbers, not a name"
+        throw InputFieldError.Number
     }
     
     
