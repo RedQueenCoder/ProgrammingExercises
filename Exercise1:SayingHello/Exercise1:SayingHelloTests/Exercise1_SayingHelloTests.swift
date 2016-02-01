@@ -47,6 +47,7 @@ class Exercise1_SayingHelloTests: XCTestCase {
         let normalString = "Delia"
         let whiteString  = "    \n"
         let trimIt       = " Delia "
+        let noLetters    = " 🍻🙌 "
 
         func XCTNameFunctionTrhow(name: String, error: InputFieldError) {
             do {
@@ -63,6 +64,7 @@ class Exercise1_SayingHelloTests: XCTestCase {
         XCTNameFunctionTrhow(emptyString, error: .GenericName)
         XCTNameFunctionTrhow(numberString, error: .Number)
         XCTNameFunctionTrhow(whiteString, error: .GenericName)
+        XCTNameFunctionTrhow(noLetters, error: .Letter)
         
         // Non Throw tests
         

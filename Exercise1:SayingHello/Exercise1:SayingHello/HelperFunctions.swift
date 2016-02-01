@@ -25,6 +25,8 @@ enum InputFieldError: String, ErrorType {
     case GenericName = "You need to enter your name"
     /// Found a Number when should be a Name
     case Number = "You entered numbers, not a name"
+    /// At Least One Letter
+    case Letter = "Name should have at least one letter"
 }
 
 /// Validates and trim an input string that should be a name.
@@ -33,15 +35,23 @@ enum InputFieldError: String, ErrorType {
 /// - Throws: `InputFieldError`
 func nameFunction(name:String) throws -> String {
     
+    
     let trimmedName = name.trim()
     
     guard !trimmedName.isEmpty else {
         throw InputFieldError.GenericName
     }
     
+    guard let onlyLetters = name.stringByApplyingTransform("[:^Letter:] Remove", reverse: false)
+        where
+        !onlyLetters.isEmpty else {
+            throw InputFieldError.Letter
+    }
+    
     guard Int(trimmedName) == nil else {
         throw InputFieldError.Number
     }
+    
     
     
     return "Hello \(trimmedName), how are you?"
