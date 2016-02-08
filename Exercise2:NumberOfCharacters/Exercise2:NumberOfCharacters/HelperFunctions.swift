@@ -34,6 +34,8 @@ func yourInputString(input:String) -> String {
     
     if input.characters.count == 0 {
         return "You need to enter a string!"
+    } else if Int(input) != nil {
+        return "Please enter letters and not numbers!"
     } else {
         return "Your input string: \(input)"
     }
@@ -43,6 +45,8 @@ func yourInputString(input:String) -> String {
 func numberOfCharactersInString(input:String) -> String {
     
     if input.characters.count == 0 {
+        return ""
+    } else if Int(input) != nil {
         return ""
     } else {
         return "\(input.uppercaseString) has \(input.characters.count) characters."
