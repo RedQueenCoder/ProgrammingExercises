@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func answerQuestion(sender: AnyObject) {
-        responseTextView.text = answerTextField.text!.output
+        responseTextView.text = answerTextField.text.output
     }
     
 

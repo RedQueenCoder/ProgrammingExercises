@@ -55,5 +55,7 @@ class Exercise3_PrintingQuotesTests: XCTestCase {
         XCTAssertEqual(emptyResponse.output, "Please enter a response!")
     }
     
+    func testNilResponseOutput() {
+        XCTAssertNil(String?().output)
     }
 }
