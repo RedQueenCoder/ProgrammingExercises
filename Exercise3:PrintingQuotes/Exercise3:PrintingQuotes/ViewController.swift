@@ -33,10 +33,7 @@ class ViewController: UIViewController {
         if let noResponse = isResponseEmpty(response!) {
             responseTextView.text = noResponse
         } else {
-            responseTextView.text = responseOutput(
-                isResponseCorrect: response!.isCorrectAnswer,
-                response: response!
-            )
+            responseTextView.text = response!.output
         }
     }
     

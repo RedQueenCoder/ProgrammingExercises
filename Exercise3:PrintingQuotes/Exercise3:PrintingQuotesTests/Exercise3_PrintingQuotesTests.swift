@@ -45,8 +45,8 @@ class Exercise3_PrintingQuotesTests: XCTestCase {
         let correctResponse = "Correct! Dorothy Parker said You can lead a horticulture, but you cannot make her think."
         let incorrectResponse = "Sorry, Virginia Woolf did not say that. Try again."
         
-        XCTAssert(correctResponse == responseOutput(true, response: correctAnswer))
-        XCTAssert(incorrectResponse == responseOutput(false, response: incorrectAnswer))
+        XCTAssert(correctResponse == "Dorothy Parker".output)
+        XCTAssert(incorrectResponse == "Virginia Woolf".output)
     }
     
     func testIsResponseEmpty() {
