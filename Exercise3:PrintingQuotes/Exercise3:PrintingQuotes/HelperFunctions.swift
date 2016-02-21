@@ -14,15 +14,7 @@ func quoteText() -> String {
     return "You can lead a horticulture, but you cannot make her think."
 }
 
-func isTheAnswerCorrect(response:String) -> Bool {
-    if response == answer {
-        return true
-    } else {
-        return false
-    }
-}
-
-func responseOutput(isResponseCorrect:Bool, response:String) -> String {
+func responseOutput(isResponseCorrect isResponseCorrect:Bool, response:String) -> String {
     if isResponseCorrect == true {
         return "Correct! \(response) said \(quoteText())"
     } else {

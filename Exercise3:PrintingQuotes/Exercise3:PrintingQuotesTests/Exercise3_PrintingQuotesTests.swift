@@ -36,8 +36,8 @@ class Exercise3_PrintingQuotesTests: XCTestCase {
     
     func testIsTheAnswerCorrect() {
         
-        XCTAssert(isTheAnswerCorrect(correctAnswer) == true)
-        XCTAssert(isTheAnswerCorrect(incorrectAnswer) == false)
+        XCTAssert(correctAnswer.isCorrectAnswer)
+        XCTAssert(!incorrectAnswer.isCorrectAnswer)
     }
     
     func testResponseOutput() {
