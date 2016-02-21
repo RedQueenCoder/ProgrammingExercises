@@ -52,8 +52,8 @@ class Exercise3_PrintingQuotesTests: XCTestCase {
     func testIsResponseEmpty() {
         let emptyResponse = ""
         
-        XCTAssert(isResponseEmpty(emptyResponse) != nil)
-        XCTAssert(isResponseEmpty(emptyResponse) == "Please enter a response!")
-        XCTAssert(isResponseEmpty(incorrectAnswer) == nil)
+        XCTAssertEqual(emptyResponse.output, "Please enter a response!")
+    }
+    
     }
 }

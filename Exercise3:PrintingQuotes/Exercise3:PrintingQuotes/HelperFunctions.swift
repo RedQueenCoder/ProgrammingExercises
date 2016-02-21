@@ -13,11 +13,3 @@ let answer = "Dorothy Parker"
 func quoteText() -> String {
     return "You can lead a horticulture, but you cannot make her think."
 }
-
-func isResponseEmpty(response:String) -> String? {
-    if response.characters.count == 0 {
-        return "Please enter a response!"
-    } else {
-        return nil
-    }
-}
