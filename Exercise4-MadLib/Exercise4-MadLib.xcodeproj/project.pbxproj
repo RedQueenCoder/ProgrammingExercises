@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		796A3E191C85EE7E00F52C50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796A3E181C85EE7E00F52C50 /* AppDelegate.swift */; };
+		796A3E1B1C85EE7E00F52C50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796A3E1A1C85EE7E00F52C50 /* ViewController.swift */; };
+		796A3E1E1C85EE7E00F52C50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 796A3E1C1C85EE7E00F52C50 /* Main.storyboard */; };
+		796A3E201C85EE7E00F52C50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 796A3E1F1C85EE7E00F52C50 /* Assets.xcassets */; };
+		796A3E231C85EE7E00F52C50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 796A3E211C85EE7E00F52C50 /* LaunchScreen.storyboard */; };
+		796A3E2E1C85EE7E00F52C50 /* Exercise4_MadLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796A3E2D1C85EE7E00F52C50 /* Exercise4_MadLibTests.swift */; };
+		796A3E391C85F29200F52C50 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796A3E381C85F29200F52C50 /* HelperFunctions.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		796A3E2A1C85EE7E00F52C50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 796A3E0D1C85EE7E00F52C50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 796A3E141C85EE7E00F52C50;
+			remoteInfo = "Exercise4-MadLib";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		796A3E151C85EE7E00F52C50 /* Exercise4-MadLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Exercise4-MadLib.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		796A3E181C85EE7E00F52C50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		796A3E1A1C85EE7E00F52C50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		796A3E1D1C85EE7E00F52C50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		796A3E1F1C85EE7E00F52C50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		796A3E221C85EE7E00F52C50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		796A3E241C85EE7E00F52C50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		796A3E291C85EE7E00F52C50 /* Exercise4-MadLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Exercise4-MadLibTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		796A3E2D1C85EE7E00F52C50 /* Exercise4_MadLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise4_MadLibTests.swift; sourceTree = "<group>"; };
+		796A3E2F1C85EE7E00F52C50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		796A3E381C85F29200F52C50 /* HelperFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		796A3E121C85EE7E00F52C50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		796A3E261C85EE7E00F52C50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		796A3E0C1C85EE7E00F52C50 = {
+			isa = PBXGroup;
+			children = (
+				796A3E171C85EE7E00F52C50 /* Exercise4-MadLib */,
+				796A3E2C1C85EE7E00F52C50 /* Exercise4-MadLibTests */,
+				796A3E161C85EE7E00F52C50 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		796A3E161C85EE7E00F52C50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				796A3E151C85EE7E00F52C50 /* Exercise4-MadLib.app */,
+				796A3E291C85EE7E00F52C50 /* Exercise4-MadLibTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		796A3E171C85EE7E00F52C50 /* Exercise4-MadLib */ = {
+			isa = PBXGroup;
+			children = (
+				796A3E181C85EE7E00F52C50 /* AppDelegate.swift */,
+				796A3E1A1C85EE7E00F52C50 /* ViewController.swift */,
+				796A3E381C85F29200F52C50 /* HelperFunctions.swift */,
+				796A3E1C1C85EE7E00F52C50 /* Main.storyboard */,
+				796A3E1F1C85EE7E00F52C50 /* Assets.xcassets */,
+				796A3E211C85EE7E00F52C50 /* LaunchScreen.storyboard */,
+				796A3E241C85EE7E00F52C50 /* Info.plist */,
+			);
+			path = "Exercise4-MadLib";
+			sourceTree = "<group>";
+		};
+		796A3E2C1C85EE7E00F52C50 /* Exercise4-MadLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				796A3E2D1C85EE7E00F52C50 /* Exercise4_MadLibTests.swift */,
+				796A3E2F1C85EE7E00F52C50 /* Info.plist */,
+			);
+			path = "Exercise4-MadLibTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		796A3E141C85EE7E00F52C50 /* Exercise4-MadLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 796A3E321C85EE7E00F52C50 /* Build configuration list for PBXNativeTarget "Exercise4-MadLib" */;
+			buildPhases = (
+				796A3E111C85EE7E00F52C50 /* Sources */,
+				796A3E121C85EE7E00F52C50 /* Frameworks */,
+				796A3E131C85EE7E00F52C50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Exercise4-MadLib";
+			productName = "Exercise4-MadLib";
+			productReference = 796A3E151C85EE7E00F52C50 /* Exercise4-MadLib.app */;
+			productType = "com.apple.product-type.application";
+		};
+		796A3E281C85EE7E00F52C50 /* Exercise4-MadLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 796A3E351C85EE7E00F52C50 /* Build configuration list for PBXNativeTarget "Exercise4-MadLibTests" */;
+			buildPhases = (
+				796A3E251C85EE7E00F52C50 /* Sources */,
+				796A3E261C85EE7E00F52C50 /* Frameworks */,
+				796A3E271C85EE7E00F52C50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				796A3E2B1C85EE7E00F52C50 /* PBXTargetDependency */,
+			);
+			name = "Exercise4-MadLibTests";
+			productName = "Exercise4-MadLibTests";
+			productReference = 796A3E291C85EE7E00F52C50 /* Exercise4-MadLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		796A3E0D1C85EE7E00F52C50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Red Queen Coder";
+				TargetAttributes = {
+					796A3E141C85EE7E00F52C50 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					796A3E281C85EE7E00F52C50 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 796A3E141C85EE7E00F52C50;
+					};
+				};
+			};
+			buildConfigurationList = 796A3E101C85EE7E00F52C50 /* Build configuration list for PBXProject "Exercise4-MadLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 796A3E0C1C85EE7E00F52C50;
+			productRefGroup = 796A3E161C85EE7E00F52C50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				796A3E141C85EE7E00F52C50 /* Exercise4-MadLib */,
+				796A3E281C85EE7E00F52C50 /* Exercise4-MadLibTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		796A3E131C85EE7E00F52C50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				796A3E231C85EE7E00F52C50 /* LaunchScreen.storyboard in Resources */,
+				796A3E201C85EE7E00F52C50 /* Assets.xcassets in Resources */,
+				796A3E1E1C85EE7E00F52C50 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		796A3E271C85EE7E00F52C50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		796A3E111C85EE7E00F52C50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				796A3E1B1C85EE7E00F52C50 /* ViewController.swift in Sources */,
+				796A3E191C85EE7E00F52C50 /* AppDelegate.swift in Sources */,
+				796A3E391C85F29200F52C50 /* HelperFunctions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		796A3E251C85EE7E00F52C50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				796A3E2E1C85EE7E00F52C50 /* Exercise4_MadLibTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		796A3E2B1C85EE7E00F52C50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 796A3E141C85EE7E00F52C50 /* Exercise4-MadLib */;
+			targetProxy = 796A3E2A1C85EE7E00F52C50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		796A3E1C1C85EE7E00F52C50 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				796A3E1D1C85EE7E00F52C50 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		796A3E211C85EE7E00F52C50 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				796A3E221C85EE7E00F52C50 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		796A3E301C85EE7E00F52C50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		796A3E311C85EE7E00F52C50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		796A3E331C85EE7E00F52C50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Exercise4-MadLib/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.redqueencoder.Exercise4-MadLib";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		796A3E341C85EE7E00F52C50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Exercise4-MadLib/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.redqueencoder.Exercise4-MadLib";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		796A3E361C85EE7E00F52C50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Exercise4-MadLibTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.redqueencoder.Exercise4-MadLibTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Exercise4-MadLib.app/Exercise4-MadLib";
+			};
+			name = Debug;
+		};
+		796A3E371C85EE7E00F52C50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Exercise4-MadLibTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.redqueencoder.Exercise4-MadLibTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Exercise4-MadLib.app/Exercise4-MadLib";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		796A3E101C85EE7E00F52C50 /* Build configuration list for PBXProject "Exercise4-MadLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				796A3E301C85EE7E00F52C50 /* Debug */,
+				796A3E311C85EE7E00F52C50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		796A3E321C85EE7E00F52C50 /* Build configuration list for PBXNativeTarget "Exercise4-MadLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				796A3E331C85EE7E00F52C50 /* Debug */,
+				796A3E341C85EE7E00F52C50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		796A3E351C85EE7E00F52C50 /* Build configuration list for PBXNativeTarget "Exercise4-MadLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				796A3E361C85EE7E00F52C50 /* Debug */,
+				796A3E371C85EE7E00F52C50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 796A3E0D1C85EE7E00F52C50 /* Project object */;
+}
