@@ -36,8 +36,8 @@ class Exercise3_PrintingQuotesTests: XCTestCase {
     
     func testIsTheAnswerCorrect() {
         
-        XCTAssert(isTheAnswerCorrect(correctAnswer) == true)
-        XCTAssert(isTheAnswerCorrect(incorrectAnswer) == false)
+        XCTAssert(correctAnswer.isCorrectAnswer)
+        XCTAssert(!incorrectAnswer.isCorrectAnswer)
     }
     
     func testResponseOutput() {
@@ -45,15 +45,17 @@ class Exercise3_PrintingQuotesTests: XCTestCase {
         let correctResponse = "Correct! Dorothy Parker said You can lead a horticulture, but you cannot make her think."
         let incorrectResponse = "Sorry, Virginia Woolf did not say that. Try again."
         
-        XCTAssert(correctResponse == responseOutput(true, response: correctAnswer))
-        XCTAssert(incorrectResponse == responseOutput(false, response: incorrectAnswer))
+        XCTAssert(correctResponse == "Dorothy Parker".output)
+        XCTAssert(incorrectResponse == "Virginia Woolf".output)
     }
     
     func testIsResponseEmpty() {
         let emptyResponse = ""
         
-        XCTAssert(isResponseEmpty(emptyResponse) != nil)
-        XCTAssert(isResponseEmpty(emptyResponse) == "Please enter a response!")
-        XCTAssert(isResponseEmpty(incorrectAnswer) == nil)
+        XCTAssertEqual(emptyResponse.output, "Please enter a response!")
+    }
+    
+    func testNilResponseOutput() {
+        XCTAssertNil(String?().output)
     }
 }

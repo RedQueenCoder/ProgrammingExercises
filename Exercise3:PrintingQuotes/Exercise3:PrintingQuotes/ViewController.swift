@@ -28,14 +28,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func answerQuestion(sender: AnyObject) {
-        let response = answerTextField.text
-        
-        if let noResponse = isResponseEmpty(response!) {
-            responseTextView.text = noResponse
-        } else {
-            let checkResponse = isTheAnswerCorrect(response!)
-            responseTextView.text = responseOutput(checkResponse, response: response!)
-        }
+        responseTextView.text = answerTextField.text.output
     }
     
 

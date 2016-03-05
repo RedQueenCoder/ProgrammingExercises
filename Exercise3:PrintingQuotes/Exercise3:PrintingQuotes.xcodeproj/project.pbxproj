@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		499ABA7A1C7A5AD100280723 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499ABA791C7A5AD100280723 /* Response.swift */; };
 		7974E3C61C7A157D00355AE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7974E3C51C7A157D00355AE9 /* AppDelegate.swift */; };
 		7974E3C81C7A157D00355AE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7974E3C71C7A157D00355AE9 /* ViewController.swift */; };
 		7974E3CB1C7A157D00355AE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7974E3C91C7A157D00355AE9 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		499ABA791C7A5AD100280723 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		7974E3C21C7A157D00355AE9 /* Exercise3:PrintingQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Exercise3:PrintingQuotes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7974E3C51C7A157D00355AE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7974E3C71C7A157D00355AE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				7974E3C51C7A157D00355AE9 /* AppDelegate.swift */,
 				7974E3C71C7A157D00355AE9 /* ViewController.swift */,
 				7974E3E51C7A1AD500355AE9 /* HelperFunctions.swift */,
+				499ABA791C7A5AD100280723 /* Response.swift */,
 				7974E3C91C7A157D00355AE9 /* Main.storyboard */,
 				7974E3CC1C7A157D00355AE9 /* Assets.xcassets */,
 				7974E3CE1C7A157D00355AE9 /* LaunchScreen.storyboard */,
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				499ABA7A1C7A5AD100280723 /* Response.swift in Sources */,
 				7974E3C81C7A157D00355AE9 /* ViewController.swift in Sources */,
 				7974E3C61C7A157D00355AE9 /* AppDelegate.swift in Sources */,
 				7974E3E61C7A1AD500355AE9 /* HelperFunctions.swift in Sources */,
