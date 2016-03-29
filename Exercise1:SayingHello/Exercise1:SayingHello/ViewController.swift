@@ -26,9 +26,27 @@ class ViewController: UIViewController {
     }
 
     @IBAction func enterName(sender: AnyObject) {
-        if let name = nameField.text {
-            let nameString:String = nameFunction(name)
+        guard let name = nameField.text else { return }
+        
+        do {
+            let nameString:String = try nameFunction(name)
             helloLabel.text = nameString
+            nameField.resignFirstResponder()
+        } catch let error as InputFieldError {
+            let errorMessage = error.rawValue
+            let alert = UIAlertController(
+                title: "Name Field Error",
+                message: errorMessage,
+                preferredStyle: UIAlertControllerStyle.Alert)
+            let dismissAlertAction = UIAlertAction(
+                title: "OK",
+                style: UIAlertActionStyle.Default,
+                handler: nil)
+            alert.addAction(dismissAlertAction)
+            self.presentViewController(alert, animated: true, completion: nil)
+        } catch _ {
+            assertionFailure("Unexpected Error Type!!!")
         }
+        
     }
 }

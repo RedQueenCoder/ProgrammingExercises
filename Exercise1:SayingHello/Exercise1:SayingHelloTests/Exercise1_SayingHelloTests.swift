@@ -26,18 +26,55 @@ class Exercise1_SayingHelloTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
+    func testStringExtensions() {
+        
+        // trimm extension
+        let whiteString = "    \n"
+        let whitePrefix = "  foo"
+        let whiteSuffix = "foo  \n"
+        let fooInfix    = "  foo  \n"
+        
+        
+        XCTAssertEqual(whiteString.trim(), "", "Trim Failed on white string")
+        XCTAssertEqual(whitePrefix.trim(), "foo", "Trim Failed on white prefix")
+        XCTAssertEqual(whiteSuffix.trim(), "foo", "Trim Failed on white suffix")
+        XCTAssertEqual(fooInfix.trim(), "foo", "Trim Failed on foo infix")
+    }
+    
     func testLabelOutput() {
-        let emptyString = ""
+        let emptyString  = ""
         let numberString = "42"
         let normalString = "Delia"
+        let whiteString  = "    \n"
+        let trimIt       = " Delia "
+        let noLetters    = " 🍻🙌 "
+
+        func XCTNameFunctionTrhow(name: String, error: InputFieldError) {
+            do {
+                let firstTest = try nameFunction(emptyString)
+                XCTAssertNil(firstTest, "Name Field Should Throw")
+            } catch let error as InputFieldError {
+                XCTAssertEqual(error, error, "Wrong Error")
+            } catch _ {
+                XCTFail("Wrong Error Type")
+            }
+        }
         
-        let firstTest = nameFunction(emptyString)
-        let secondTest = nameFunction(numberString)
-        let thirdTest = nameFunction(normalString)
+        // Throw tests
+        XCTNameFunctionTrhow(emptyString, error: .GenericName)
+        XCTNameFunctionTrhow(numberString, error: .Number)
+        XCTNameFunctionTrhow(whiteString, error: .GenericName)
+        XCTNameFunctionTrhow(noLetters, error: .Letter)
         
-        XCTAssertEqual(firstTest, "You need to enter your name")
-        XCTAssertEqual(secondTest, "You entered numbers, not a name")
-        XCTAssertEqual(thirdTest, "Hello \(normalString), how are you?")
+        // Non Throw tests
+        
+        let firstTest = try? nameFunction(normalString)
+        XCTAssertNotNil(firstTest)
+        XCTAssertEqual(firstTest, "Hello \(normalString), how are you?")
+        
+        let secondTest = try? nameFunction(trimIt)
+        XCTAssertNotNil(secondTest)
+        XCTAssertEqual(secondTest, "Hello Delia, how are you?")
     }
     
     func testPerformanceExample() {
